@@ -117,7 +117,7 @@ const Movie = (props) => {
                                     <Grid item container xs={12} direction="row" justify="space-between" className={classes.movieInfoContainer}>
                                         <Grid item xs={6}><Typography variant={"overline"} className={classes.movieInfo}>Average rating: {movieData.vote_average}</Typography></Grid>
                                         <Grid item xs={6}><Typography variant={"overline"} className={classes.movieInfo}>Running time: {movieData.runtime} mins</Typography></Grid>
-                                        <Grid item xs={6}><Typography variant={"overline"} className={classes.movieInfo}>Release date: {movieData.release_date}</Typography></Grid>
+                                        <Grid item xs={6}><Typography variant={"overline"} className={classes.movieInfo}>Release date: {movieData.release_date.substring(0, 10)}</Typography></Grid>
                                         <Grid item xs={6}><Typography variant={"overline"} className={classes.movieInfo}>Box office: ${movieData.revenue}</Typography></Grid>
                                     </Grid>
                                 </CardContent>
