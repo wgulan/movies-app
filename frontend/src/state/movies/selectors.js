@@ -11,24 +11,14 @@ const getSortOrder = (state) => state.movies.sortParams.order;
 const makeSelectMovieWithId = (id) => createSelector(
     [selectAllMovies],
     (allMovies) => {
-        const letters = /[a-zA-Z]/g;
-        if (!letters.test(id)) {
-            return allMovies.find(movie => movie.id === Number(id));
-        } else {
-            return allMovies.find(movie => movie.id === id);
-        }
+        return allMovies.find(movie => movie.id === id);
     }
 )
 
 const makeSelectCommentWithId = (movieId, commentId) => createSelector(
     [selectAllMovies],
     (allMovies) => {
-        const letters = /[a-zA-Z]/g;
-        if (!letters.test(movieId)) {
-            return allMovies.find(movie => movie.id === Number(movieId)).comments.find(c => c.id === commentId);
-        } else {
-            return allMovies.find(movie => movie.id === movieId).comments.find(c => c.id === commentId);
-        }
+        return allMovies.find(movie => movie.id === movieId).comments.find(c => c.id === commentId);
     }
 )
 
