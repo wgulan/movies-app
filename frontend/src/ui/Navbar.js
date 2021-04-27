@@ -23,7 +23,7 @@ const Navbar = (props) => {
     const classes = useStyles(props.theme);
     
     return (
-        <AppBar position="static" style={{ backgroundColor: "#111218", height: '75px', paddingTop: '5px' }}>
+        <AppBar position="static" style={{ backgroundColor: "#111218", paddingTop: '5px' }}>
             <Toolbar>
                 <IconButton
                     component={Link}
