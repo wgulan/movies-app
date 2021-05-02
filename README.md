@@ -37,7 +37,7 @@ run `docker-compose up --build` while in main repo directory.
 * Movies can be filtered by the title, genre, and production year.
 * Movies can be sorted, ascending and descending, by title, production year and average rating
 * New movies can be added, edited or deleted
-* In detailed movie view, you can add, edit and delete comments
+* In detailed movie view you can add, edit and delete comments
 
 ---
 Source of data used on backend:
